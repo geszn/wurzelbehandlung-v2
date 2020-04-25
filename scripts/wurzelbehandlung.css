@@ -1,0 +1,255 @@
+@font-face {
+    font-family: "cooper_hewittlight";
+    src: url("https://dev.strawanzer.online/wurzelbehandlung/version-1/fonts/CooperHewitt-Light.otf") format("opentype");
+}
+@font-face {
+    font-family: "cooper_hewittsemibold";
+    src: url("https://dev.strawanzer.online/wurzelbehandlung/version-1/fonts/CooperHewitt-Semibold.otf") format("opentype");
+}
+@font-face {
+    font-family: "cooper_hewittbook";
+    src: url("https://dev.strawanzer.online/wurzelbehandlung/version-1/fonts/CooperHewitt-Book.otf") format("opentype");
+}
+
+body {
+    background-color: #fff;
+    color: #fff;
+}
+.stage-wurzelbehandlung .heading {
+    font-family: 'cooper_hewittsemibold';
+    font-size: 30px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    color: #3c4447;
+}
+.stage-wurzelbehandlung .subheading {
+    font-family: 'cooper_hewittlight';
+    font-size: 18px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    color: #3c4447;
+}
+.stage-wurzelbehandlung .description {
+    font-family: 'cooper_hewittlight';
+    font-size: 14px;
+    line-height: 1.4em;
+    text-align: left;
+    color: #3c4447;
+    width: 325px;
+    max-width: 450px;
+    margin: 0px auto 20px 0;
+}
+.stage-wurzelbehandlung .row {  
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+}
+/* Main column */
+.stage-wurzelbehandlung .main {
+    flex: 50%;
+    display: inline-table;
+    /*text-align: center;
+    align-items: center;
+    justify-content: center;
+    */
+}
+.stage-wurzelbehandlung .side {
+    flex: 50%;
+    margin-top: 58px;
+}
+.stage-wurzelbehandlung .containerImage {
+    /*max-width: 350px;*/
+    display: table-cell;
+    height: 475px;
+    margin: 0 20px 0 auto;
+    vertical-align: bottom;
+}
+.stage-wurzelbehandlung .wurzelbehandlung {
+    /*position: absolute;*/
+    width: 250px;
+    float: right;
+}
+.stage-wurzelbehandlung .singlepart,
+.stage-wurzelbehandlung .text, 
+.stage-wurzelbehandlung .timeline{
+    transition: fill.2s cubic-bezier(0.25, 0.46, 0.45, 0.94), color .2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+.stage-wurzelbehandlung .text{ color: rgb(211,211,211); }
+.stage-wurzelbehandlung .text.active{color:#000000;}
+
+@media screen and (min-width: 769px) {
+    .stage-wurzelbehandlung .containerImage { max-width: 350px; }
+    .stage-wurzelbehandlung .wurzelbehandlung { margin-right: 90px; }
+    .stage-wurzelbehandlung .footer { margin-top: 25px; }
+    .stage-wurzelbehandlung .timeline { margin: 0px auto 0px auto; }
+    .stage-wurzelbehandlung .timeline ul {
+    list-style-type: none;
+    text-align: center;
+    vertical-align: middle;
+    padding: 0;
+    }
+    .stage-wurzelbehandlung .timeline button {
+    background-color: white;
+    outline: none;
+    font-family: 'cooper_hewittbook';
+    text-transform: uppercase;
+    font-size: 14px;
+    /*line-height: 40px;*/
+    color: #a3362c;
+    padding: 13px 20px 10px 20px;
+    display: inline-block;
+    border: 1px solid #a3362c;
+    margin: 0;
+    text-decoration: none;
+    cursor: pointer;
+    text-align: center;
+    vertical-align: middle;
+    transition: background 250ms ease-in-out, 
+                transform 150ms ease;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    }
+    .stage-wurzelbehandlung .timeline button:focus {
+    outline: none;
+    color: #fff;
+    background-color:#a3362c ;
+    
+    }
+    .stage-wurzelbehandlung .timeline button.active {
+        color: #fff;
+        background-color:#a3362c ;
+    }
+    .stage-wurzelbehandlung .prev, 
+    .stage-wurzelbehandlung .next {
+        display: none;
+    }    .stage-wurzelbehandlung .timeline ul li {
+        display: inline-block !important;
+        margin-right: 5px;
+        padding-right: 8px;
+    }
+    .stage-wurzelbehandlung .timeline ul li:last-child {
+        border-right: none;
+        padding-right: 0;
+        margin-right: 0;
+    }
+}
+
+/* Responsive layout - when the screen is less than 768px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 768px) {
+    .row, .navbar { 
+        flex-direction: column; 
+    }
+    .stage-wurzelbehandlung .main {
+        display: block;
+        margin: 0px auto 0px auto;
+    }
+    .stage-wurzelbehandlung .side {
+        margin: 30px auto 0 auto;
+        text-align: center;
+    }
+    .stage-wurzelbehandlung .containerImage {
+        margin: auto;
+        height: 377px;
+    }
+    .stage-wurzelbehandlung .wurzelbehandlung {
+        width: 200px;
+    }    
+    .stage-wurzelbehandlung .heading {
+        line-height: 0;
+    }  
+    .stage-wurzelbehandlung .subheading {
+        display: none;
+    }
+    .stage-wurzelbehandlung .footer {
+        width: 100%;
+        margin: auto;
+        top: 465px;
+        position: absolute;
+    }
+    .stage-wurzelbehandlung .description {
+        margin: 80px auto 20px auto;
+        text-align: center;
+    }
+    .stage-wurzelbehandlung .timeline {
+        padding: 0 20px;
+        position: relative;
+        overflow: hidden;
+    }
+    .stage-wurzelbehandlung .timeline ul {
+        margin: auto;
+        padding: 0;
+    }
+    .stage-wurzelbehandlung .timeline li {
+        display: none;
+        text-align: center;
+        font-family: 'cooper_hewittbook';
+    }
+    .stage-wurzelbehandlung .timeline li,
+    .stage-wurzelbehandlung .timeline button { cursor: none; }
+    .stage-wurzelbehandlung .timeline button {
+        font-family: 'cooper_hewittbook';
+        font-size: 20px;
+        text-transform: uppercase;
+        border: none;
+        background-color: transparent;
+    }
+    .stage-wurzelbehandlung .timeline button.active {
+        /*font-family: 'cooper_hewittsemibold';
+        text-transform: uppercase;
+        font-size: 26px;*/
+        color: #3c4447;
+        border: none;
+        outline: none; 
+    }
+    .stage-wurzelbehandlung .timeline .timeline-arrows { width:768px; }
+    .stage-wurzelbehandlung .prev {
+        font-family: 'cooper_hewittlight';
+        font-size: 26px;
+        line-height: 1.1em;
+        color: #3c4447;
+        left: 17%;
+        cursor: pointer;
+        position: absolute;
+        top: 0%;
+        width: auto;
+        margin-top: 0px;
+    }
+    .stage-wurzelbehandlung .next {
+        font-family: 'cooper_hewittlight';
+        font-size: 26px;
+        line-height: 1.2em;
+        color: #3c4447;
+        right: 17%;
+        cursor: pointer;
+        position: absolute;
+        top: 0%;
+        width: auto;
+        margin-top: 0px;
+    }        
+    .stage-wurzelbehandlung .nav-item { cursor: auto !important; }    
+}
+
+@media screen and (max-width: 479px) {
+    .stage-wurzelbehandlung .prev {
+        font-family: 'cooper_hewittlight';
+        font-size: 26px;
+        color: #3c4447;
+        left: 10%;
+        cursor: pointer;
+        position: absolute;
+        top: 0%;
+        width: auto;
+        margin-top: 0px;
+    }
+    .stage-wurzelbehandlung .next {
+        font-family: 'cooper_hewittlight';
+        font-size: 26px;
+        color: #3c4447;
+        right: 10%;
+        cursor: pointer;
+        position: absolute;
+        top: 0%;
+        width: auto;
+        margin-top: 0px;
+    }
+}
