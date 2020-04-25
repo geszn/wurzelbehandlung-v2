@@ -68,13 +68,13 @@ var descriptions = {
 		title: 'Wurzelbehandlung',
 		subtitle: 'Traditionelle Behandlung',
 		desc: '<p>Die engen Zahninnenräume werden mit zahnärztlichen Instrumenten geöffnet, mechanisch gereinigt und gespült, um Krankheitskeime und abgestorbenes Gewebe zu beseitigen.</p><p>Eine perfekte Sterilisation des Zahninnenraumes und der dauerhafte Verschluss gelingt auch bei großer Sorgfalt oft nicht.</p>',
-		img: 'img/behandlung.png'	
+		img: 'img/wurzelbehandlung.jpg'	
 	},
 	'problem': {
 		title: 'Wurzelbehandlung',
 		subtitle: 'Das Problem',
 		desc: '<p>Ihre Zähne bestehen aus den sichtbaren Zahnkronen und den Zahnwurzeln. Innerhalb der Zähne befinden sich die Wurzelkanäle. Das sind enge Hohlräume im Innern der Wurzel. Sie werden von der Pulpa (Zahnnerv) ausgefüllt, die aus Bindegewebe, Nervenfasern, Blut- und Lymphgefäßen besteht.</p><p>Eine Wurzelkanalbehandlung muss eingeleitet werden, wenn eine Entzündung oder Infektion des Zahnnervs (Pulpa) vorliegt: Zum Beispiel nach tiefer Karies, wiederholten Behandlungen oder einem Riss des Zahnes oder der Wurzel.<br>Wird nicht behandelt, führt das zu Schmerzen und zum Absterben des Zahnnervs. Danach vermehren sich Bakterien im Zahninnenraum. Es kommt zu schmerzhaften Vereiterungen und später zur Zerstörung der umliegenden Kieferknochen.</p>',
-		img: 'img/problem.png'
+		img: 'img/behandlung-1.jpg'
 	}
 };
 
