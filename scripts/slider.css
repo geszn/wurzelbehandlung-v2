@@ -1,0 +1,41 @@
+.image-container {
+    position: relative;
+     max-width: 350px;
+    display: flex;
+    height: 475px;
+    margin: 0 20px 0 auto;
+    object-fit: contain;
+   align-items: center;
+}
+.image-container img {
+    position: absolute;
+    animation-name: multiple-image-crossfade;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-duration: 6s;
+}
+.image-container img:nth-of-type(1) {
+    animation-delay: 5s;
+}
+.image-container img:nth-of-type(2) {
+    animation-delay: 3s;
+}
+.image-container img:nth-of-type(3) {
+    animation-delay: 1s;
+}
+
+
+@keyframes multiple-image-crossfade {
+    0% {
+        opacity: 1;
+    }
+    25% {
+        opacity: 0;
+    }
+    75% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
