@@ -96,7 +96,7 @@ function genericOn(cls) {
 		document.getElementById('containerImage').style.display = "block" ;
 	} else {
 		document.getElementById('image').src = 'img/behandlung-2.jpg' || '';
-		document.getElementById('image-container').style.display = "flex" ;
+		document.getElementById('image-container').style.display = "block" ;
 		document.getElementById('containerImage').style.display = "none" ;
 	}
 
