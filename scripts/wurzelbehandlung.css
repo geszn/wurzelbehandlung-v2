@@ -64,7 +64,6 @@ body {
     /*position: absolute;*/
     /*float: right;*/
 }
-
 .img-1 {
     width: 200px;
     margin-top: 160px;
@@ -83,9 +82,55 @@ body {
     margin-left: 0px;
     z-index: -1;
 }
-
 .img-4  {
-    width: 300px;
+    width: 282px;
+    margin-right: 51px;
+}
+/* The animation */
+.fadeIn {
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    margin: auto;
+}
+.fadeIn img {
+    position: absolute;
+    right: 50px;
+    top: 0;
+    -webkit-animation-name: fade;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-duration: 15s;
+    animation-name: fade;
+    animation-iteration-count: infinite;
+    animation-duration: 15s;
+}
+
+@-webkit-keyframes fade {
+    0% {opacity: 0;}
+    20% {opacity: 1;}
+    33% {opacity: 1;}
+    53% {opacity: 0;}
+    100% {opacity: 0;}
+}
+@keyframes fade {
+    0% {opacity: 0;}
+    20% {opacity: 1;}
+    33% {opacity: 1;}
+    53% {opacity: 0;}
+    100% {opacity: 0;}
+}
+
+#f1 {
+    width: 200px;
+}
+#f2 {
+    -webkit-animation-delay: -10s;
+    width: 250px;
+}
+#f3 {
+    -webkit-animation-delay: -5s;
+    width: 330px;
+    /*background-color: lightgreen;*/
 }
 .stage-wurzelbehandlung .singlepart,
 .stage-wurzelbehandlung .text, 
@@ -98,6 +143,7 @@ body {
 @media screen and (min-width: 769px) {
     .stage-wurzelbehandlung .row {
         margin-top: 40px;
+        min-height: 450px;
     }
     .stage-wurzelbehandlung .main {
         text-align: right;
@@ -105,10 +151,23 @@ body {
     }
     .stage-wurzelbehandlung .containerImage { 
         max-width: 350px;
-        margin-top: 20px;
+        margin-top: 65px;
     }
     .stage-wurzelbehandlung .wurzelbehandlung { 
         /*margin-right: 50px;*/
+    }
+    #f1 {
+        width: 200px;
+        right: 89px;
+        top: 192px;
+    }
+    #f2 {
+        width: 250px;
+        right: 61px;
+        top: 43px;
+    }
+    #f3 {
+        width: 330px;
     }
     .stage-wurzelbehandlung .timeline { margin: 0px auto 0px auto; }
     .stage-wurzelbehandlung .timeline ul {
@@ -185,8 +244,23 @@ body {
         height: 350px;
     }
     .stage-wurzelbehandlung .wurzelbehandlung {
-        /*width: 200px;*/
+        margin: 75px auto 0 auto;
+        width: 250px;
     }    
+    #f1 {
+        width: 200px;
+        left: -108px;
+        top: 158px;
+    }
+    #f2 {
+        width: 250px;
+        left: -135px;
+        top: 10px;
+    }
+    #f3 {
+        width: 330px;
+        left: -145px;
+    }
     .stage-wurzelbehandlung .heading {
         line-height: 0;
     }  
