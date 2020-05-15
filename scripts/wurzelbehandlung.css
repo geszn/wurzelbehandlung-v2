@@ -36,7 +36,6 @@ body {
     text-align: left;
     color: #3c4447;
     width: 315px;
-    /*max-width: 450px;*/
     margin: 0px auto 20px 0;
 }
 .stage-wurzelbehandlung .row {  
@@ -46,56 +45,28 @@ body {
 }
 /* Main column */
 .stage-wurzelbehandlung .main {
-    flex: 50%;
+    flex: 51%;
     display: block;
 }
 .stage-wurzelbehandlung .side {
-    flex: 50%;
-    margin-top: 40px;
+    flex: 49%;
+    margin-top: 30px;
 }
 .stage-wurzelbehandlung .containerImage {
-    /*max-width: 350px;*/
     display: table-cell;
-    height: 475px;
     margin: 0 20px 0 auto;
     vertical-align: bottom;
 }
-.stage-wurzelbehandlung .wurzelbehandlung {
-    /*position: absolute;*/
-    /*float: right;*/
-}
-.img-1 {
-    width: 200px;
-    margin-top: 160px;
-    margin-left: 64px;
-    z-index: -1;
-}
-.img-2 {
-    width: 250px;
-    margin-top: 4px;
-    margin-left: 39px;
-    z-index: -1;
-}
-.img-3 {
-    width: 330px;
-    margin-top: 17px;
-    margin-left: 0px;
-    z-index: -1;
-}
-.img-4  {
-    width: 282px;
-    margin-right: 51px;
-}
 /* The animation */
-.fadeIn {
+.stage-wurzelbehandlung .fadeIn {
     position: absolute;
     top: 0px;
     left: 50%;
     margin: auto;
 }
-.fadeIn img {
+.stage-wurzelbehandlung .fadeIn img {
     position: absolute;
-    right: 50px;
+    right: 15px;
     top: 0;
     -webkit-animation-name: fade;
     -webkit-animation-iteration-count: infinite;
@@ -107,30 +78,33 @@ body {
 
 @-webkit-keyframes fade {
     0% {opacity: 0;}
-    20% {opacity: 1;}
     33% {opacity: 1;}
-    53% {opacity: 0;}
+    66% {opacity: 0;}
     100% {opacity: 0;}
 }
 @keyframes fade {
     0% {opacity: 0;}
-    20% {opacity: 1;}
     33% {opacity: 1;}
-    53% {opacity: 0;}
+    66% {opacity: 0;}
     100% {opacity: 0;}
 }
 
-#f1 {
+.stage-wurzelbehandlung #f1 {
+    -webkit-animation-delay: -15s;
     width: 200px;
+    z-index: 2;
 }
-#f2 {
+.stage-wurzelbehandlung #f2 {
     -webkit-animation-delay: -10s;
     width: 250px;
 }
-#f3 {
+.stage-wurzelbehandlung #f3 {
     -webkit-animation-delay: -5s;
     width: 330px;
-    /*background-color: lightgreen;*/
+}
+.stage-wurzelbehandlung #f4 {
+    width: 282px;
+    margin-right: 51px;
 }
 .stage-wurzelbehandlung .singlepart,
 .stage-wurzelbehandlung .text, 
@@ -142,8 +116,7 @@ body {
 
 @media screen and (min-width: 769px) {
     .stage-wurzelbehandlung .row {
-        margin-top: 40px;
-        min-height: 450px;
+        min-height: 520px;
     }
     .stage-wurzelbehandlung .main {
         text-align: right;
@@ -151,22 +124,19 @@ body {
     }
     .stage-wurzelbehandlung .containerImage { 
         max-width: 350px;
-        margin-top: 65px;
+        margin-top: 50px;
     }
-    .stage-wurzelbehandlung .wurzelbehandlung { 
-        /*margin-right: 50px;*/
-    }
-    #f1 {
+    .stage-wurzelbehandlung #f1 {
         width: 200px;
         right: 89px;
-        top: 192px;
+        top: 152px;
     }
-    #f2 {
+    .stage-wurzelbehandlung #f2 {
         width: 250px;
         right: 61px;
-        top: 43px;
+        top: 0px;
     }
-    #f3 {
+    .stage-wurzelbehandlung #f3 {
         width: 330px;
     }
     .stage-wurzelbehandlung .timeline { margin: 0px auto 0px auto; }
@@ -182,7 +152,6 @@ body {
     font-family: 'cooper_hewittbook';
     text-transform: uppercase;
     font-size: 14px;
-    /*line-height: 40px;*/
     color: #a3362c;
     padding: 13px 20px 10px 20px;
     display: inline-block;
@@ -224,7 +193,7 @@ body {
 
 /* Responsive layout - when the screen is less than 768px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 768px) {
-    .row, .navbar { 
+    .stage-wurzelbehandlung .row, .stage-wurzelbehandlung .navbar { 
         flex-direction: column; 
         margin-top: 0px;
     }
@@ -242,24 +211,24 @@ body {
     .stage-wurzelbehandlung .containerImage {
         margin: auto;
         height: 350px;
-    }
-    .stage-wurzelbehandlung .wurzelbehandlung {
-        margin: 75px auto 0 auto;
-        width: 250px;
-    }    
-    #f1 {
+    }  
+    .stage-wurzelbehandlung #f1 {
         width: 200px;
-        left: -108px;
+        left: -100px;
         top: 158px;
     }
-    #f2 {
+    .stage-wurzelbehandlung #f2 {
         width: 250px;
-        left: -135px;
+        left: -127px;
         top: 10px;
     }
-    #f3 {
+    .stage-wurzelbehandlung #f3 {
         width: 330px;
-        left: -145px;
+        left: -137px;
+    }
+    .stage-wurzelbehandlung #f4 {
+        margin: 75px auto 0 auto;
+        width: 250px;
     }
     .stage-wurzelbehandlung .heading {
         line-height: 0;
@@ -301,9 +270,6 @@ body {
         background-color: transparent;
     }
     .stage-wurzelbehandlung .timeline button.active {
-        /*font-family: 'cooper_hewittsemibold';
-        text-transform: uppercase;
-        font-size: 26px;*/
         color: #3c4447;
         border: none;
         outline: none; 
